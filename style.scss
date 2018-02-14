@@ -412,6 +412,9 @@ nav {
         color: $tag-index-label-color;
         background-color: $tag-index-label-background-color;
         border-radius: 3px;
+        font-size: 15px;
+        font-family: -webkit-body;
+        font-weight: normal;
       }
     }
   }
@@ -494,6 +497,9 @@ nav {
       span {
         float: left;
         padding: .5px 5px;
+        font-family: -webkit-body;
+        font-size: 15px;
+        font-weight: normal;
 
         &.count {
           background-color: $tag-index-count-background-color;
