@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Toddler's Bottle - fd 문제풀이
+excerpt_separator: <!--more-->
 tags:
   - Write-up
   - Pwnable.kr
@@ -10,6 +11,7 @@ tags:
 
 먼저 첫 단계인 `Toddler's Bottle` 의 문제를 풀어보았다.
 
+<!--more-->
   
 문제 접속 정보는 아래와 같다.  
 
