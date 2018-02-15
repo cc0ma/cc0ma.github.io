@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Toddler's Bottle] - fd 문제풀이
+title: Toddler's Bottle - fd 문제풀이
 tags:
   - Write-up
   - Pwnable.kr
