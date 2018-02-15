@@ -84,9 +84,9 @@ int main(int argc, char* argv[], char* envp[]){
 
 |<center>번호</center>|<center>설명</center>|<center>이름</center> |<center>파일스트림</center>|
 |:--------|:--------:|--------:|--------:|
-|<center>**0**</center>|<center>표준 입력(Standard Input)</center>|STDIN_FILENO|<center>stdin</center>|
-|<center>**1**</center>|<center>표준 출력(Standard Output)</center>|STDOUT_FILENO|<center>stdout</center>|
-|<center>**2**</center>|<center>표준 에러(Standard Error)</center>|STDERR_FILENO|<center>stderr</center>|
+|<center>**0**</center>|<center>표준 입력(Standard Input)</center>|<center>STDIN_FILENO</center>|<center>stdin</center>|
+|<center>**1**</center>|<center>표준 출력(Standard Output)</center>|<center>STDOUT_FILENO</center>|<center>stdout</center>|
+|<center>**2**</center>|<center>표준 에러(Standard Error)</center>|<center>STDERR_FILENO</center>|<center>stderr</center>|
 
 `read` 함수를 통해 `buf`에 값을 저장 한 이후에는 해당 값과 `LETMEWIN` 을 비교한다.  
 
