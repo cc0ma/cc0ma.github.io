@@ -8,8 +8,9 @@ tags:
 
 `Pwnable`을 공부하기 위해 Pwnable.kr 의 문제를 풀기 시작했다.  
 
-먼저 첫 단계인 `Toddler's Bottle` 의 문제를 풀어보았다.  
+먼저 첫 단계인 `Toddler's Bottle` 의 문제를 풀어보았다.
 
+  
 문제 접속 정보는 아래와 같다.  
 
 * ssh fd@pwnable.kr -p2222 (pw:guest)
