@@ -35,7 +35,7 @@ tags:
 * User : 소유자의 권한  
 * Group : 소유 그룹의 권한  
 * Others : 소유자나 소유 그룹에 포함되지 않는 사용자의 권한  
-
+  
 |<center>권한</center>|<center>표시</center>|<center>파일</center>|<center>디렉토리</center>|<center>Octal 값</center>|
 |:--------|:--------:|--------:|--------:|--------:|
 |<center>읽기</center>|<center>r</center>|<center>파일을 읽고 복사 가능</center>|<center>ls 명령어를 통해 디렉토리의 목록 확인 가능</center>|<center>4</center>
