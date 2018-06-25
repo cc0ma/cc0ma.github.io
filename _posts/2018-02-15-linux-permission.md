@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! 'Linux 소유권(Ownership) / 허가권(Permission)'
+title: !'[Linux] 소유권(Ownership) / 허가권(Permission)'
 excerpt_separator: <!--more-->
 tags:
   - System
