@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux 오류 - Could not get lock 오류
+title: ! '[Linux 오류] Could not get lock 오류'
 excerpt_separator: <!--more-->
 tags:
   - Error
