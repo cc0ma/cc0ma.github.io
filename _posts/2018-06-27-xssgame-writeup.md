@@ -620,7 +620,7 @@ http://xss-game.appspot.com/level6/frame#HTTPS://www.google.com/jsapi?callback=a
 
 ![]({{ site.baseurl }}/images/xssgame/xssgame_19.PNG)
 
-마지막 문제에서 Client Side Script 에서 문제가 있었던 것인지, 이론상으론 될 것 같은데 문제가 풀리지 않아 오래 고민을 했다.  
+마지막 문제에서 어떤 부분 때문인지 , 이론상으론 될 것 같은데 문제가 풀리지 않아 오래 고민을 했다.  
 
 그런데 문제를 다 푼 다음에 도대체 왜 안되는지를 모르겠어서, 처음에 시도한 방법을 다시 해 보았더니 이번엔 문제가 풀렸다.  
 
