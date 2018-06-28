@@ -432,7 +432,7 @@ Level 5는 회원가입을 하는 페이지처럼 보이는데, 실제로 소스
 </html>
 ```
 
-* Email을 입력하는 페이지
+* Email을 입력하는 페이지  
 ```html
 <!doctype html>
 <html>
