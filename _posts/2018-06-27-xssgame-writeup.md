@@ -557,10 +557,12 @@ alert 창을 띄우기 위해 confirm 대신에 `javascript:alert(1);`을 넘겨
 
 script 소스코드를 살펴보니 아래와 같은 매커니즘으로 동작하고 있었다.  
 
+```
 1. URL에서 # 뒤의 값을 가져와 url 변수에 저장  
 2. url 변수에서 https:// 형태의 값이 있는지 검사  
 3. 만약 https:// 형태의 값이 있을 경우, Sorry, cannot load a URL containing "http" 출력하고 종료  
 4. 필터링을 통과 할 경우 해당 url에 있는 script 코드를 그대로 load  
+```
 
 따라서 외부의 링크에서 악성 스크립트 코드를 생성 해 # 뒤에 넘겨주면 이를 그대로 실행 해 준다.  
 
