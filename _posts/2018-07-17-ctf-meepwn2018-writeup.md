@@ -363,7 +363,8 @@ http://206.189.92.209/ezchallz/
 
 `index`와 `register` 페이지의 소스코드를 얻어 `base64`로 디코딩 하면 아래와 같다.  
 
-* index.php
+* index.php  
+
 ```php
 <html>
 <a href="index.php">Homepage</a>
@@ -386,7 +387,8 @@ if(isset($_GET["page"]) && !empty($_GET["page"])) {
 </html>
 ```
 
-* register.php
+* register.php  
+
 ```php
 <html>
 <?php
