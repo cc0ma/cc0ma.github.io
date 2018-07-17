@@ -29,21 +29,21 @@ But Holmes, why are they crying?
 
 파일을 다운받아 압축을 풀면 `evidence.jpg`라는 사진 파일을 하나 얻을 수 있다.  
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_01.jpg)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_01.jpg)
 
 사진에는 딱히 이상이 없어보여, `Hex Editor`를 사용 해 헥스 값을 확인 해 보았다.  
 
 파일의 첫 부분은 정상적인 `JPG` 파일의 헤더가 있었다.  
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_02.png)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_02.png)
 
 그런데 맨 마지막 부분에서 아래와 같이 `message.pdf`라는 문자열과 `PK`가 있는 것을 찾을 수 있었다.  
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_03.png)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_03.png)
 
 `PK`라는 파일 헤더를 어딘가에서 본 기억이 나 인터넷에 검색을 해 보았더니 `ZIP` 파일의 헤더라는 것을 알 수 있었다.  
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_04.png)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_04.png)
 
 사진과 같이, `ZIP` 파일의 헤더는 `50 4b 03 04`로 시작하게 된다.  
 
@@ -51,13 +51,13 @@ But Holmes, why are they crying?
 
 그런데 찾아보니 `50 4b 05 06`은 있었지만 `50 4b 03 04`는 찾을 수 없었다.  
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_05.png)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_05.png)
 
 아마도 파일 헤더를 살짝 수정해 둔 것 같았다.  
 
 그래서 `evidence.jpg` 파일에서 `50 4b 05 06`을 `50 4b 03 04`로 패치해 준 뒤, `WinHex` 라는 툴을 이용 해 파일을 추출 해 보았다.  
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_06.png)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_06.png)
 
 그 결과 다음과 같이 압축 파일을 추출할 수 있었고, 압축 파일 안에는 `message.pdf` 파일이 있었다.  
 
@@ -327,7 +327,7 @@ http://206.189.92.209/ezchallz/
 
 홈페이지에 접속 해 보면 아래와 같은 화면만 있다.  
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_07.png)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_07.png)
 
 `Homepage`와 `Free register`, 딱 두개의 메뉴만 있을 뿐이었다.  
 
@@ -335,9 +335,9 @@ http://206.189.92.209/ezchallz/
 
 `Free register`를 누를 경우에는 아래와 같이 값을 입력할 수 있으며, `Register` 버튼을 누르면 가짜 flag를 출력 해 준다.  
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_08.png)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_08.png)
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_09.png)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_09.png)
 
 소스코드를 봐도 딱히 눈에 띄는것이 없어 `URL`을 살펴 보았다.  
 
@@ -359,7 +359,7 @@ http://206.189.92.209/ezchallz/
 
 그 결과 아래와 같이 `base64`로 인코딩 된 소스코드를 얻을 수 있었다.  
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_10.png)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_10.png)
 
 `index`와 `register` 페이지의 소스코드를 얻어 `base64`로 디코딩 하면 아래와 같다.  
 
@@ -484,7 +484,7 @@ for($i = 0; $i<strlen($salt); $i++) {
 
 `90884f5d03c3b2e698c1fbea37d833de/flag.php`로 접속 해 주석을 확인 해보면 flag를 얻을 수 있다.  
 
-![]({{ site.baseurl }}/images/MeePwn2018/meepwn_11.png)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/meepwn_11.png)
 
 ```
 FLAG : MeePwnCTF{just-a-warmup-challenge-are-you-ready-for-hacking-others-challz?}
