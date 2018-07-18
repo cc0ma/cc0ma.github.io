@@ -83,7 +83,7 @@ if($whoareyou==="alien.somewhere.meepwn.team")
 { 
     if(!isset($_GET['alien'])) 
     { 
-        $wrong = <<<EOF 
+        $wrong = ' 
 <h2 id="intro" class="neon">You will be driven to hidden-street place in omega sector which is only for alien! Please verify your credentials first to get into the taxi!</h2> 
 <h1 id="main" class="shadow">Are You ALIEN??</h1> 
 <form id="main"> 
@@ -91,7 +91,7 @@ if($whoareyou==="alien.somewhere.meepwn.team")
     <button type="submit" class="button-error" name="alien" value="No">No</button> 
 </form> 
 <img src="assets/taxi.png" id="taxi" width="15%" height="20%" /> 
-EOF; 
+'; 
         echo $wrong; 
     } 
     if(isset($_GET['alien']) and !empty($_GET['alien'])) 
@@ -114,7 +114,7 @@ elseif($whoareyou==="human.ludibrium.meepwn.team")
     if(!isset($_GET['human'])) 
     { 
         echo ""; 
-        $wrong = <<<EOF 
+        $wrong = ' 
 <h2 id="intro" class="neon">hellu human, welcome to omega sector, please verify your credentials to get into the taxi!</h2> 
 <h1 id="main" class="shadow">Are You Human?</h1> 
 <form id="main"> 
@@ -122,7 +122,7 @@ elseif($whoareyou==="human.ludibrium.meepwn.team")
     <button type="submit" class="button-error" name="human" value="No">No</button> 
 </form> 
 <img src="assets/taxi.png" id="taxi" width="15%" height="20%" /> 
-EOF; 
+'; 
         echo $wrong; 
     } 
     if(isset($_GET['human']) and !empty($_GET['human'])) 
