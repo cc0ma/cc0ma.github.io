@@ -48,7 +48,7 @@ http://138.68.228.12/
 
 때문에 `http://138.68.228.12/?is_debug=1`로 접속하면 소스코드를 확인할 수 있다.  
 
-```html
+```php
 <?php 
 ob_start(); 
 session_start(); 
