@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! "[Lord of SQL Injection] LoS - orc 문제풀이"
+title: ! "[Lord of SQL Injection] LoS - wolfman 문제풀이"
 excerpt_separator: <!--more-->
 tags:
   - Write-up
