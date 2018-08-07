@@ -2,6 +2,7 @@
 layout: post
 title: ! "[XSS Game] Write up"
 excerpt_separator: <!--more-->
+comments: true
 tags:
   - Write-up
   - XSS Game
