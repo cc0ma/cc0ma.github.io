@@ -2,6 +2,7 @@
 layout: post
 title: ! "[Linux 오류] Could not get lock 오류"
 excerpt_separator: <!--more-->
+comments: true
 tags:
   - Error
   - Linux
