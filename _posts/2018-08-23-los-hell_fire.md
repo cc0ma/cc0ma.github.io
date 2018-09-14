@@ -50,6 +50,7 @@ query : select id,email,score from prob_hell_fire where 1 order by
 
 |id|   |email|   |score|
 |---|---|---|---|---|
+| |   | |   | |
 
 일단 무슨 값이 저장되어 있는지 확인하기 위해서, `?order=id`를 입력해 보았다.  
 
