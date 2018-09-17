@@ -82,10 +82,6 @@ mysql> SELECT REPLACE(REPLACE('SELECT REPLACE(REPLACE("$",CHAR(34),CHAR(39)),CHA
 
 이 것을 바탕으로 문제를 풀기 위해 `SELECT`를 `a' union SELECT`로 변경했다.  
 
-```
-
-```
-
 그랬더니 `'`와 `"`이 내가 입력한 값과 조금씩 달라졌다.  
 
 왜 바뀌는지 도저히 모르겠어서 `REPLACE` 함수를 기준으로 쿼리문을 잘라서 비교 해 보았다.  
