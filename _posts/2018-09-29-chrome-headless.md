@@ -11,6 +11,7 @@ tags:
 하는 일이 일이다보니 크고작은 CTF용 문제를 낼 일이 많다.  
 
 그런데 `XSS` 문제를 낼 때마다 고민인게, 참가자들이 문제를 제대로 풀었다는 것을 어떻게 검증하느냐 이다.  
+
 그러다 `Chrome Headless`라는 것을 알게 되어 정리해 두려 한다.  
 
 <!--more-->
@@ -32,7 +33,7 @@ Chrome Headless는 쉽게 이야기 하면 Chrome 브라우저를 GUI 없이 사
 
 Ubuntu에서 Chrome Headless를 사용하기 위해서 몇 가지 환경 세팅이 필요하다.  
 
-1. python 설치하기
+#### 1. python 설치하기
 ```
 $ apt-get install python2.7
 $ apt-get install python-pip python-dev python-setuptools
@@ -42,7 +43,7 @@ $ apt-get install python-pip python-dev python-setuptools
 $ pip install --upgrade pip
 ```
 
-2. Chrome Headless를 사용하기 위한 툴 및 모듈 설치  
+#### 2. Chrome Headless를 사용하기 위한 툴 및 모듈 설치  
 
 ```
 $ pip install selenium
