@@ -2,6 +2,7 @@
 layout: post
 title: ! "[Lord of SQL Injection] LoS - iron_golem 문제풀이"
 excerpt_separator: <!--more-->
+comments : true
 tags:
   - Write-up
   - Lord of SQL Injection
