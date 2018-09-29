@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! "Chrome Headless 사용법"
+title: ! "[Chrome] Chrome Headless 사용법"
 excerpt_separator: <!--more-->
 comments : true
 tags:
