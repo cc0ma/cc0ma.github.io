@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! "[Lord of SQL Injection] LoS - phantom 문제풀이"
+title: ! "[hackover 2018] i-love-heddha Write up"
 excerpt_separator: <!--more-->
 tags:
   - Write-up
