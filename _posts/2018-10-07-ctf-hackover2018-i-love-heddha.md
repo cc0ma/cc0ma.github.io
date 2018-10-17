@@ -2,6 +2,7 @@
 layout: post
 title: ! "[hackover 2018] i-love-heddha Write up"
 excerpt_separator: <!--more-->
+comments : true
 tags:
   - Write-up
   - CTF
